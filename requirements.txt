@@ -87,7 +87,7 @@ coverage==6.0.1
     # via
     #   codecovopentelem
     #   pytest-cov
-cryptography==42.0.0
+cryptography==42.0.4
     # via shared
 ddtrace==0.46.0
     # via -r requirements.in
@@ -95,7 +95,7 @@ deprecated==1.2.12
     # via opentelemetry-api
 distlib==0.3.1
     # via virtualenv
-django==4.2.7
+django==4.2.11
     # via
     #   -r requirements.in
     #   ariadne-django
@@ -136,7 +136,7 @@ drf-spectacular==0.26.2
     # via -r requirements.in
 drf-spectacular-sidecar==2023.3.1
     # via -r requirements.in
-ecdsa==0.18.0
+ecdsa==0.19.0
     # via tlslite-ng
 elastic-apm==6.13.2
     # via -r requirements.in
@@ -182,6 +182,8 @@ googleapis-common-protos[grpc]==1.59.1
     #   grpcio-status
 graphql-core==3.2.3
     # via ariadne
+greenlet==3.0.3
+    # via sqlalchemy
 grpc-google-iam-v1==0.12.6
     # via google-cloud-pubsub
 grpcio==1.58.0
@@ -195,7 +197,7 @@ grpcio-status==1.58.0
     # via
     #   google-api-core
     #   google-cloud-pubsub
-gunicorn==20.1.0
+gunicorn==22.0.0
     # via -r requirements.in
 h11==0.12.0
     # via httpcore
@@ -207,7 +209,7 @@ httpx==0.23.0
     # via shared
 identify==2.2.2
     # via pre-commit
-idna==2.8
+idna==3.7
     # via
     #   anyio
     #   requests
@@ -277,7 +279,9 @@ opentelemetry-util-http==0.41b0
 opentracing==2.4.0
     # via -r requirements.in
 packaging==20.9
-    # via pytest
+    # via
+    #   gunicorn
+    #   pytest
 pluggy==0.13.1
     # via pytest
 pre-commit==2.11.1
@@ -411,7 +415,7 @@ sortedcontainers==2.4.0
     #   intervaltree
 sqlalchemy==1.4.50
     # via shared
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via django
 starlette==0.36.2
     # via ariadne
